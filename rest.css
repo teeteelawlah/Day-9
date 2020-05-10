@@ -1,0 +1,204 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+/* start for navigation links*/
+.start{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(Cooked_Dish.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+	opacity: 1.2s;
+}
+.nav_bar{
+	display: flex;
+	padding: 40px 120px;
+}
+.nav_logo img{
+width: 135px;
+}
+.nav_links{
+	flex: 1;
+}
+.nav_links ul{
+	margin-left: 50px;
+	display: inline;
+}
+.nav_links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 25px;
+}
+.nav_links ul a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+.nav_links ul li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: yellow;
+	display: block;
+	margin: auto;
+}
+.nav_links ul li:hover::after{
+	width: 100%;
+}
+
+.btn{
+	padding: 10px 20px;
+	border: 0;
+	background: yellow;
+	font-weight: bold;
+	cursor: pointer;
+}
+.nav_links .btn{
+	float: right;
+}
+/* food title */
+.food_title{
+	margin: 80px 130px;
+	color: #fff;
+}
+.food_title h1{
+	font-size: 44px;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+	text-align: center;
+}
+.food_title h1 span{
+	color: yellow;
+}
+/* side bar */
+.side_bar{
+	height: 100%;
+	background: #000;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.search{
+	height: 60%;
+	width: 80px;
+}
+.search .fa{
+	margin: 45px 23px;
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
+.socials{
+	height: 35%;
+	width: 80px;
+	background: yellow;
+	text-align: center;
+	padding-top: 27%;
+	bottom: 0;
+	position: absolute;
+}
+.socials .fa{
+	margin: 15px 20px;
+	display: block;
+	padding: 8px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+
+/* Menu */
+.ourmenu{
+	padding: 5% 10%;
+	text-align: center;
+	background: #f5f5f5;
+}
+.ourmenu_wrapper .menu{
+display: flex;
+justify-content: space-between;
+}
+.ourmenu_wrapper .menu-1.menu{
+	margin-bottom: 25px;
+}
+.ourmenu_wrapper .menu_members{
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+.ourmenu h1{
+	font-size: 50px;
+	font-style: oblique;
+	font-family: fantasy;
+	color: coral;
+	height: 80px;
+	display: inline-block;
+}
+.ourmenu_wrapper .menu_members h3{
+	font-size: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+}
+.ourmenu_wrapper .menu_members p{
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: red;
+	text-align: center;
+}
+.ourmenu_wrapper .menu_members a{
+	color: midnightblue;
+}
+.ourmenu_wrapper .menu_members img{
+	width: 90%;
+	display: block;
+	height: 60%;
+	transition: all 0.5s ease;
+}
+.ourmenu_wrapper .menu_members:hover img{
+	transform: scale(1.1);
+}
+@media(max-width: 700px){
+	.nav_bar{
+		height: auto;
+		flex-direction: column;
+	}
+	.nav_bar ul{
+		flex-direction: column;
+		text-align: center;
+	}
+	.nav_bar ul li{
+		margin-bottom: 5px;
+		display: block;
+	}
+	.nav_links{
+		height: 100vh;
+		width: 200px;
+		background: #000;
+		top: 0;
+		right: 0;
+	}
+	.nav_links ul a{
+		display: block;
+	}
+	.nav_links .btn{
+		float: none;
+		margin-left: 30px;
+		margin-top: 10px;
+	}
+	.nav_logo img{
+		margin-bottom: 5px;
+	}
+	.side_bar{
+		display: none;
+	}
+	.food_title{
+		margin: 80px 40px;
+	}
+	.food_title h1{
+		font-size: 50px;
+	}
+}
